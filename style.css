@@ -110,7 +110,7 @@ a {
     padding: 2%;
 }
 .slide {
-    animation: slide 3.5s ease 0s 1 normal none;
+    animation: slide 3.5s ease 1s 1 normal none;
 }
 
 @keyframes slide {
