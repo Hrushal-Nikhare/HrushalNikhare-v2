@@ -1,3 +1,98 @@
+:root {
+    --bg: #023047;
+    --text: #f1faee;
+    --highlight: #e9c46a;
+    --secondary: #2a9d8f;
+    --primary: #a8dadc;
+}
+
+#loader {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    z-index: 99999;
+    background: #002233;
+}
+
+#loader p {
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 100px;
+    padding: 0;
+    margin: 0;
+}
+
+#loader-content {
+    width: 100px;
+    aspect-ratio: 1;
+    --c: no-repeat linear-gradient(rgb(255, 255, 255) calc(50% - 10px),
+            rgba(255, 255, 255, 0) 0 calc(50% + 10px),
+            rgb(255, 255, 255) 0);
+    background: var(--c) 0% 100%, var(--c) 50% 100%, var(--c) 100% 100%;
+    background-size: 20% calc(200% + 20px);
+    animation: b4 1s infinite linear;
+}
+
+/* Loader Animation from https://dev.to/afif/i-made-100-css-loaders-for-your-next-project-4eje <3 thx */
+@keyframes b4 {
+    33% {
+        background-position: 0% 50%, 50% 100%, 100% 100%;
+    }
+
+    50% {
+        background-position: 0% 0%, 50% 50%, 100% 100%;
+    }
+
+    66% {
+        background-position: 0% 0%, 50% 0%, 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 0%, 50% 0%, 100% 0%;
+    }
+}
+
+body {
+    background: url(Hero1.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+    color: var(--text);
+    background-color: var(--bg);
+}
+
+a {
+    color: var(--highlight);
+}
+
+.slide {
+    animation: slide 3.5s ease 0s 1 normal none;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-100vw);
+        opacity: 0;
+
+    }
+}
+
 /* Css Reset by Josh Comaeu <3 */
 /*
   1. Use a more-intuitive box-sizing model.
@@ -75,84 +170,4 @@ h6 {
 #root,
 #__next {
     isolation: isolate;
-}
-
-#loader {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    min-height: 100vh;
-    padding: 0;
-    margin: 0;
-    z-index: 99999;
-    background: #002233;
-}
-
-#loader p {
-    text-align: center;
-    color: #fff;
-    font-weight: bold;
-    font-size: 100px;
-    padding: 0;
-    margin: 0;
-}
-
-#loader-content {
-    width: 100px;
-    aspect-ratio: 1;
-    --c: no-repeat linear-gradient(rgb(255, 255, 255) calc(50% - 10px),
-            rgba(255, 255, 255, 0) 0 calc(50% + 10px),
-            rgb(255, 255, 255) 0);
-    background: var(--c) 0% 100%, var(--c) 50% 100%, var(--c) 100% 100%;
-    background-size: 20% calc(200% + 20px);
-    animation: b4 1s infinite linear;
-}
-
-/* Loader Animation from https://dev.to/afif/i-made-100-css-loaders-for-your-next-project-4eje <3 thx */
-@keyframes b4 {
-    33% {
-        background-position: 0% 50%, 50% 100%, 100% 100%;
-    }
-
-    50% {
-        background-position: 0% 0%, 50% 50%, 100% 100%;
-    }
-
-    66% {
-        background-position: 0% 0%, 50% 0%, 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 0%, 50% 0%, 100% 0%;
-    }
-}
-
-body {
-    background: url(Hero1.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 100%;
-    overflow: hidden;
-}
-.slide{
-animation: slide 3.5s ease 0s 1 normal none;
-}
-
-@keyframes slide {
-    0% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-
-    100% {
-        transform: translateY(-100vw);
-        opacity: 0;
-        
-    }
 }
