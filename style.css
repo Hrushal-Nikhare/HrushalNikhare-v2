@@ -59,6 +59,14 @@
         background-position: 0% 0%, 50% 0%, 100% 0%;
     }
 }
+main{
+    mix-blend-mode: screen;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 body {
     background: url(Hero1.jpg) no-repeat center center fixed;
