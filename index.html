@@ -12,14 +12,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script>
         $(document).ready(function () {
-            $('#loader').addClass('animate_fadeOutUp');
+            $('#loader').addClass('slide');
+            $('#loader').delay(3600).hide(0);
+            // $("#loader").delay(4000).remove();
         });
     </script>
 </head>
 
 <body>
 
-    <div id="loader" class="animate__animated animate__slower ">
+    <div id="loader" >
         <p id="loader-content"></p>
     </div>
     Credits =>
