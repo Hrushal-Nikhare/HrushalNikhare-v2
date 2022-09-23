@@ -20,7 +20,16 @@
     z-index: 99999;
     background: #002233;
 }
-
+.about{
+    background-color: var(--bg);
+    border-radius: 4px;
+    padding: 10px;
+    top:50%;
+color: var(--primary);
+}
+.underline{
+    text-decoration: underline !important;
+}
 .name {
     font-size: 9vh;
 }
