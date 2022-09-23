@@ -9,7 +9,6 @@
     <!-- Imports -->
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Seo -->
     <meta name="have-i-been-pwned-verification" value="08300fa70c88aa4b9e93c952f145c830">
@@ -27,16 +26,20 @@
     <!-- Google Verify -->
     <meta name="google-site-verification" content="N-Vd7wfBB4cnS75jGjKtNn0x14p5NEM6MwFjE8Mmitg" />
     <script>
-        $(document).ready(function () {
-            $('#loader').addClass('slide');
-            $('#loader').delay(3600).hide(0);
-            // $("#loader").delay(4000).remove();
-        });
+        // Remove loader function
+        function RemoveLoader(){
+            document.querySelector("#loader").classList.add("slide");
+            // setTimeout(loader.classList.add("Inviz")},3600);
+            setTimeout(function(){
+                document.querySelector("#loader").style.display = "none";
+            },3600);
+            
+        }
     </script>
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body onload="RemoveLoader()">
 
     <div id="loader" >
         <p id="loader-content"></p>
@@ -67,7 +70,7 @@
                             </a>
                         </li>
 
-                        <li>
+                        <!-- <li>
                             <a class="text-[#e9c46a] transition hover:text-[#e9c46a]/75" href="/">
                                 Careers
                             </a>
@@ -83,7 +86,7 @@
                             <a class="text-[#e9c46a] transition hover:text-[#e9c46a]/75" href="/">
                                 Services
                             </a>
-                        </li>
+                        </li> -->
 
                         <li>
                             <a class="text-[#e9c46a] transition hover:text-[#e9c46a]/75" href="/">
@@ -112,15 +115,16 @@
     </div>
 
 </header>
+<div class="front">
     <main>
     <h1 class="beforetxt">Hello! I am</h1>
     <h1 class="name">Hrushal Nikhare</h1>
-
     </main>
     <div class="credits">
         Background Image by <a href="https://www.deviantart.com/seerlight/art/A-Rainy-Night-772112342">SeerLight</a>
     </div>
-    <!-- Credits =>
+</div>
+    <!-- Credits :=
     <ul>
         <li>Watching Sunset by <a
                 href="https://www.deviantart.com/bisbiswas/art/Watching-Sunset-929518803">BisBiswas</a></li>

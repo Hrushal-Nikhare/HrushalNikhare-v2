@@ -20,16 +20,20 @@
     z-index: 99999;
     background: #002233;
 }
-.name{
+
+.name {
     font-size: 9vh;
 }
-.beforetxt{
+
+.beforetxt {
     font-size: 7vh;
 }
+
 @media only screen and (max-width: 1025px) {
-    .beforetxt{
+    .beforetxt {
         display: none;
     }
+
     main {
         /* mix-blend-mode: difference; */
         position: absolute;
@@ -38,6 +42,7 @@
         transform: translate(-50%, -50%);
     }
 }
+
 #loader p {
     text-align: center;
     color: #fff;
@@ -102,32 +107,37 @@ a {
     color: var(--highlight) !important;
     text-decoration: wavy !important;
 }
-li a{
+
+li a {
     font-size: 2vh;
 }
 
-.credits{
+.credits {
     position: absolute;
     bottom: 0;
     color: var(--text);
     right: 0;
     padding: 2%;
 }
+
 .slide {
     animation: slide 3.5s ease 1s 1 normal none;
 }
 
 @keyframes slide {
-    0% {
+    from {
         transform: translateY(0);
         opacity: 1;
     }
 
-    100% {
+    to {
         transform: translateY(-100vw);
         opacity: 0;
-
+        top: 100%;
+        height: 0;
+        display: unset;
     }
+
 }
 
 /* Css Reset by Josh Comaeu <3 */
