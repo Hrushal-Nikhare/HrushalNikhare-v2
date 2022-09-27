@@ -133,7 +133,7 @@ li a {
 }
 
 .slide {
-    animation: slide 3.5s ease 1s 1 normal none;
+    animation: slide 3.5s ease 2s 1 normal none;
 }
 
 @keyframes slide {
