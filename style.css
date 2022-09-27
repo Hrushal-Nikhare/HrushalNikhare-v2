@@ -123,12 +123,15 @@ main {
 }
 
 body {
-  background: url(Hero1.jpg) no-repeat center center fixed;
-  background-size: cover;
-  height: 100%;
-  overflow: hidden;
-  color: var(--text);
-  background-color: var(--bg);
+    background: url(Hero1.webp) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+    color: var(--text);
+    background-color: var(--bg);
 }
 
 a {
